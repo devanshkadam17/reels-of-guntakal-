@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --color-accent: #F27D26;
+  --color-accent-hover: #D96A1F;
+  --color-dark-bg: #050505;
+  --color-dark-card: #121212;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-dark-bg text-white font-sans antialiased;
+  }
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, rgba(242, 125, 38, 0.1) 0%, rgba(5, 5, 5, 1) 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(242, 125, 38, 0.2);
+}
+
+.gold-glow-strong {
+  box-shadow: 0 0 30px rgba(242, 125, 38, 0.4);
+}
